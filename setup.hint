@@ -1,0 +1,4 @@
+category: KDE Perl
+requires: libgcc1 libkdecore5 libsmokebase3 libsmokekde3 libstdc++6 perl perl-Qt4
+sdesc: "Perl KDE4 bindings"
+ldesc: "A collection of language bindings for Qt and KDE"
