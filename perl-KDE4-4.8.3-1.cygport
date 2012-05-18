@@ -2,8 +2,6 @@ ORIG_PN="perlkde"
 inherit perl kde4
 
 
-SRC_URI="mirror://kde/stable/${PV}/src/${ORIG_PN}-${PV}.tar.bz2"
-
 DEPS_PATH="${PERL_VENDORARCH}/auto/QtCore4"
 
 CYGCMAKE_ARGS="-DCUSTOM_PERL_SITE_ARCH_DIR=${PERL_VENDORARCH}"
