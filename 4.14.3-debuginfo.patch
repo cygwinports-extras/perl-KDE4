@@ -1,0 +1,231 @@
+--- origsrc/perlkde-4.14.3/akonadi/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/akonadi/src/CMakeLists.txt	2014-11-21 01:56:26.107608200 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(akonadi_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Akonadi.c
+--- origsrc/perlkde-4.14.3/attica/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/attica/src/CMakeLists.txt	2014-11-21 01:56:26.110108500 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(attica_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Attica.c
+--- origsrc/perlkde-4.14.3/kate/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kate/src/CMakeLists.txt	2014-11-21 01:56:26.112608800 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kate_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Kate.c
+--- origsrc/perlkde-4.14.3/kdeui/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kdeui/src/CMakeLists.txt	2014-11-21 01:56:26.117109400 -0600
+@@ -16,7 +16,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kdeui4_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KDEUi4.c
+--- origsrc/perlkde-4.14.3/kdevplatform/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kdevplatform/src/CMakeLists.txt	2014-11-21 01:56:26.119109600 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kdevplatform_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KDevPlatform.c
+--- origsrc/perlkde-4.14.3/kfile/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kfile/src/CMakeLists.txt	2014-11-21 01:56:26.121610000 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kfile_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KFile.c
+--- origsrc/perlkde-4.14.3/khtml/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/khtml/src/CMakeLists.txt	2014-11-21 01:56:26.123610200 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(khtml_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KHTML.c
+--- origsrc/perlkde-4.14.3/kio/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kio/src/CMakeLists.txt	2014-11-21 01:56:26.125610500 -0600
+@@ -16,7 +16,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kio4_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KIO4.c
+--- origsrc/perlkde-4.14.3/knewstuff2/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/knewstuff2/src/CMakeLists.txt	2014-11-21 01:56:26.127610700 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(knewstuff2_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KNewStuff2.c
+--- origsrc/perlkde-4.14.3/knewstuff3/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/knewstuff3/src/CMakeLists.txt	2014-11-21 01:56:26.129611000 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(knewstuff3_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KNewStuff3.c
+--- origsrc/perlkde-4.14.3/kparts/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kparts/src/CMakeLists.txt	2014-11-21 01:56:26.131611200 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kparts_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KParts.c
+--- origsrc/perlkde-4.14.3/ktexteditor/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/ktexteditor/src/CMakeLists.txt	2014-11-21 01:56:26.134111500 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(ktexteditor_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KTextEditor.c
+--- origsrc/perlkde-4.14.3/kutils/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/kutils/src/CMakeLists.txt	2014-11-21 01:56:26.136111800 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(kutils_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/KUtils.c
+--- origsrc/perlkde-4.14.3/nepomuk/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/nepomuk/src/CMakeLists.txt	2014-11-21 01:56:26.138112000 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(nepomuk_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Nepomuk.c
+--- origsrc/perlkde-4.14.3/nepomukquery/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/nepomukquery/src/CMakeLists.txt	2014-11-21 01:56:26.140612400 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(nepomukquery_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/NepomukQuery.c
+--- origsrc/perlkde-4.14.3/okular/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/okular/src/CMakeLists.txt	2014-11-21 01:56:26.142612600 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(okular_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Okular.c
+--- origsrc/perlkde-4.14.3/plasma/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/plasma/src/CMakeLists.txt	2014-11-21 01:56:26.145112900 -0600
+@@ -16,7 +16,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(plasma4_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Plasma4.c
+--- origsrc/perlkde-4.14.3/solid/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/solid/src/CMakeLists.txt	2014-11-21 01:56:26.147113200 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(solid_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Solid.c
+--- origsrc/perlkde-4.14.3/soprano/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/soprano/src/CMakeLists.txt	2014-11-21 01:56:26.149613500 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(soprano_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/Soprano.c
+--- origsrc/perlkde-4.14.3/sopranoclient/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/sopranoclient/src/CMakeLists.txt	2014-11-21 01:56:26.151613800 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(sopranoclient_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/SopranoClient.c
+--- origsrc/perlkde-4.14.3/sopranoserver/src/CMakeLists.txt	2013-09-30 04:05:11.000000000 -0500
++++ src/perlkde-4.14.3/sopranoserver/src/CMakeLists.txt	2014-11-21 01:56:26.153614000 -0600
+@@ -15,7 +15,7 @@ set_source_files_properties( ${CMAKE_CUR
+     PROPERTIES LANGUAGE CXX
+ )
+ 
+-set( CMAKE_CXX_FLAGS ${PERL_CXX_FLAGS} )
++add_compile_options( ${PERL_CXX_FLAGS} )
+ 
+ set(sopranoserver_LIBRARY_SRC
+     ${CMAKE_CURRENT_BINARY_DIR}/SopranoServer.c
