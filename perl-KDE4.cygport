@@ -3,7 +3,7 @@ inherit perl kde4
 
 NAME="perl-KDE4"
 VERSION=4.14.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Perl"
 SUMMARY="Perl KDE4 bindings"
 DESCRIPTION="A collection of language bindings for Qt and KDE"
@@ -12,4 +12,5 @@ PATCH_URI="4.14.3-debuginfo.patch"
 
 DEPS_PATH="${PERL_VENDORARCH}/auto/QtCore4"
 
+LDFLAGS+=" -fstack-protector-strong"
 CYGCMAKE_ARGS="-DCUSTOM_PERL_SITE_ARCH_DIR=${PERL_VENDORARCH} -DDISABLE_Kate=ON -DDISABLE_Okular=ON"
